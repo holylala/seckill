@@ -1,6 +1,7 @@
 package com.holylala.seedskill.dao;
 
 import com.holylala.seedskill.model.SuccessKilled;
+import org.apache.ibatis.annotations.Param;
 
 /**
  * @author zhenqionghuang@creditease.cn
@@ -18,7 +19,7 @@ public interface SuccessKilledDao {
      * @param userPhone
      * @return
      */
-    int insertSuccessKilled(long seckillId,String userPhone);
+    int insertSuccessKilled(@Param("seckillId") long seckillId,@Param("userPhone") String userPhone);
 
     /**
      * 根据Id查询成功的秒杀 带有对应的秒杀产品信息
