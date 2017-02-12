@@ -21,7 +21,7 @@
 
 	<select id="queryById" resultType="Seckill" parameterType="long">
 
-		select seckkill_id,name,number,start_time,end_time,
+		select seckill_id,name,number,start_time,end_time,
 		create_time
 		from seckill
 		where seckill_id = #{seckillId}
@@ -30,7 +30,7 @@
 
 	<select id="queryAll" resultType="Seckill">
 
-		select seckkill_id,name,number,start_time,end_time,
+		select seckill_id,name,number,start_time,end_time,
 		create_time
 		from seckill
 		order by create_time DESC

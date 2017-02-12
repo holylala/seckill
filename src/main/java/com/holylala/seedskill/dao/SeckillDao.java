@@ -14,6 +14,7 @@ import java.util.List;
  * @date 2016/10/24 23:42
  * @Company: creditease.cn
  */
+//自动生成代码测试----->在待编写测试的java类源码块上按快捷键ctrl+shift+T
 public interface SeckillDao {
 
 
