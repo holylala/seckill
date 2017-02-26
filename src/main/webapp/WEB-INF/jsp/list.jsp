@@ -2,11 +2,12 @@
     pageEncoding="UTF-8"%>
 
 <%@include file="tag.jsp"%>
-
+<!-- http://localhost:8080/seckill/list -->
 <!DOCTYPE html>
 <html>
 <head>
     <title>秒杀商品列表</title>
+    <!-- head 包含bootstrap相关的js 和 css引用 静态包含-->
     <%@include file="head.jsp"%>
 </head>
 <body>

@@ -27,32 +27,32 @@ import static org.junit.Assert.*;
 @ContextConfiguration({"classpath:spring/spring-dao.xml"})
 public class SeckillDaoTest {
 
-    // 注入Dao实现类依赖
-
-    @Resource
-    private SeckillDao seckillDao;
-
-
-
-    //@Test
-    public void testQueryById() throws Exception {
-        Seckill seckill = seckillDao.queryById(1L);
-        System.out.println(seckill);
-    }
-
-    //@Test
-    public void testQueryAll() throws Exception {
-        List<Seckill> seckillList = seckillDao.queryAll(0,10);
-        for (Seckill seckill : seckillList) {
-            System.out.println(seckill);
-        }
-    }
-
-    //@Test
-    public void testReduceNumber() throws Exception {
-        Date date = new Date();
-        int result = seckillDao.reduceNumber(1L,date);
-        System.out.println(result);
-    }
+//    // 注入Dao实现类依赖
+//
+//    @Resource
+//    private SeckillDao seckillDao;
+//
+//
+//
+//    //@Test
+//    public void testQueryById() throws Exception {
+//        Seckill seckill = seckillDao.queryById(1L);
+//        System.out.println(seckill);
+//    }
+//
+//    //@Test
+//    public void testQueryAll() throws Exception {
+//        List<Seckill> seckillList = seckillDao.queryAll(0,10);
+//        for (Seckill seckill : seckillList) {
+//            System.out.println(seckill);
+//        }
+//    }
+//
+//    //@Test
+//    public void testReduceNumber() throws Exception {
+//        Date date = new Date();
+//        int result = seckillDao.reduceNumber(1L,date);
+//        System.out.println(result);
+//    }
 
 }

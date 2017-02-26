@@ -25,21 +25,21 @@ import static org.junit.Assert.*;
 @ContextConfiguration({"classpath:spring/spring-dao.xml"})
 public class SuccessKilledDaoTest {
 
-    @Resource
-    private SuccessKilledDao successKilledDao;
-
-    //@Test
-    public void testInsertSuccessKilled() throws Exception {
-        int result = successKilledDao.insertSuccessKilled(1L,"18618192456");
-        System.out.println("insert success:>>>"+result);
-    }
-
-    //@Test
-    public void testQueryByIdWithSeckill() throws Exception {
-
-        SuccessKilled successKilled  = successKilledDao.queryByIdWithSeckill(1L,"18618192456");
-        System.out.println("successKilled:>>"+successKilled);
-        Seckill seckill = successKilled.getSeckill();
-        System.out.println("seckill:>>"+seckill);
-    }
+//    @Resource
+//    private SuccessKilledDao successKilledDao;
+//
+//    //@Test
+//    public void testInsertSuccessKilled() throws Exception {
+//        int result = successKilledDao.insertSuccessKilled(1L,"18618192456");
+//        System.out.println("insert success:>>>"+result);
+//    }
+//
+//    //@Test
+//    public void testQueryByIdWithSeckill() throws Exception {
+//
+//        SuccessKilled successKilled  = successKilledDao.queryByIdWithSeckill(1L,"18618192456");
+//        System.out.println("successKilled:>>"+successKilled);
+//        Seckill seckill = successKilled.getSeckill();
+//        System.out.println("seckill:>>"+seckill);
+//    }
 }
